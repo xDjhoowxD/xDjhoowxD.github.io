@@ -4,10 +4,10 @@ Página estática para GitHub Pages, inspirada no estilo visual da referência e
 
 ## Publicação
 
-1. Crie um repositório chamado `jhonatanpereiraqa.github.io`.
+1. Crie um repositório chamado `xDjhoowxD.github.io`.
 2. Envie `index.html`, `styles.css` e `script.js` para a branch principal.
 3. Ative em `Settings > Pages`.
-4. Acesse `https://jhonatanpereiraqa.github.io`.
+4. Acesse `https://xdjhoowxd.github.io`.
 
 O contato da página aponta apenas para o LinkedIn:
 `https://www.linkedin.com/in/jhonatanpereiraqa/`
