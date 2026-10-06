@@ -1,252 +1,332 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portfólio de Jhonatan da Silva Pereira, QA Lead especializado em qualidade de software, automação de testes e análise de riscos." />
-  <title>Jhonatan Pereira | QA Lead</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:opsz,wght@9..144,700;9..144,800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <header class="topbar">
-    <a class="logo" href="#inicio">JP</a>
-    <nav aria-label="Menu principal">
-      <a href="#sobre">Sobre</a>
-      <a href="#experiencia">Experiência</a>
-      <a href="#contato">Contato</a>
-    </nav>
-    <button class="theme-toggle" type="button" aria-label="Alternar tema" data-theme-toggle>
-      <span data-theme-icon>☾</span>
-    </button>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Jhonatan QA Lab — trilhas práticas para aprender qualidade de software, testes, automação, APIs, mobile e carreira em QA."
+    />
+    <meta name="keywords" content="QA, testes de software, automação, Playwright, Cypress, API testing, carreira QA" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:title" content="Jhonatan QA Lab" />
+    <meta
+      property="og:description"
+      content="Uma jornada prática e visual para aprender QA com trilhas, labs, desafios e evolução orientada por carreira."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://xdjhoowxd.github.io/" />
+    <meta property="og:site_name" content="Jhonatan QA Lab" />
+    <title>Jhonatan QA Lab | Formação prática em QA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Pular para o conteúdo</a>
 
-  <main id="inicio">
-    <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-copy reveal">
-          <p class="kicker">QA Lead | Automação de Testes</p>
-          <h1>Jhonatan<br />Pereira</h1>
-          <p>
-            Qualidade de software com visão crítica, estratégia de testes,
-            automação e foco em entregar confiança para o usuário.
-          </p>
-          <a class="button" href="https://www.linkedin.com/in/jhonatanpereiraqa/" target="_blank" rel="noreferrer">
-            Conversar no LinkedIn
-          </a>
-        </div>
+    <header class="header" data-header>
+      <a class="brand" href="#home" aria-label="Jhonatan QA Lab">
+        <span class="brand-icon">QA</span>
+        <span>
+          Jhonatan
+          <strong>QA Lab</strong>
+        </span>
+      </a>
 
-        <div class="hero-figure reveal" aria-label="Ilustração de profissional de QA">
-          <div class="photo-orbit">
-            <span class="orbit-dot dot-one"></span>
-            <span class="orbit-dot dot-two"></span>
-            <span class="orbit-dot dot-three"></span>
-            <div class="photo-frame">
-              <img src="assets/jhonatan-profile.jpg?v=2" alt="Foto de Jhonatan Pereira" onerror="this.classList.add('is-hidden'); this.nextElementSibling.classList.add('is-visible');" />
-              <div class="photo-fallback" aria-hidden="true">JP</div>
+      <nav class="nav" aria-label="Menu principal">
+        <a href="#trilhas">Trilhas</a>
+        <a href="#roadmap">Roadmap</a>
+        <a href="#labs">Labs</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="theme-toggle" type="button" aria-label="Alternar tema" data-theme-toggle>
+          <span data-theme-icon>☾</span>
+        </button>
+        <a class="nav-cta" href="https://www.linkedin.com/in/jhonatanpereiraqa/" target="_blank" rel="noreferrer">
+          LinkedIn
+        </a>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="home">
+        <div class="hero-glow glow-one"></div>
+        <div class="hero-glow glow-two"></div>
+
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">Formação prática em qualidade de software</p>
+            <h1>Aprenda QA com trilhas claras, labs reais e mentalidade de produto.</h1>
+            <p class="hero-description">
+              Uma página inspirada na proposta da referência, mas com uma identidade mais moderna:
+              foco em fundamentos, testes funcionais, automação, APIs, mobile, performance e carreira.
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="#trilhas">Explorar trilhas</a>
+              <a class="button ghost" href="https://www.linkedin.com/in/jhonatanpereiraqa/" target="_blank" rel="noreferrer">
+                Conversar no LinkedIn
+              </a>
             </div>
-            <div class="avatar-laptop">QA</div>
           </div>
-        </div>
-      </div>
 
-      <div class="container quick-cards">
-        <article class="mini-card reveal">
-          <span>01</span>
-          <strong>Testes estratégicos</strong>
-          <p>Planejamento orientado a risco e impacto.</p>
-        </article>
-        <article class="mini-card reveal">
-          <span>02</span>
-          <strong>Automação</strong>
-          <p>Playwright, Cypress, Selenium e Appium.</p>
-        </article>
-        <article class="mini-card reveal">
-          <span>03</span>
-          <strong>APIs e integrações</strong>
-          <p>Validação técnica de fluxos críticos.</p>
-        </article>
-        <article class="mini-card reveal">
-          <span>04</span>
-          <strong>IA para QA</strong>
-          <p>Apoio para cenários, análise e produtividade.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section" id="sobre">
-      <div class="container two-columns">
-        <div class="section-title reveal">
-          <p class="kicker">Sobre mim</p>
-          <h2>Qualidade construída com estratégia, clareza e parceria com o time.</h2>
-        </div>
-        <div class="text-stack reveal">
-          <p>
-            Sou QA Lead com mais de 5 anos de experiência em qualidade de software,
-            unindo visão técnica, análise de risco e colaboração com produto e desenvolvimento.
-          </p>
-          <p>
-            Minha atuação passa por testes funcionais, automação, APIs, mobile,
-            documentação, investigação de falhas e melhoria contínua dos processos de QA.
-          </p>
-          <div class="note-list">
-            <span>Análise de impacto</span>
-            <span>Automação com propósito</span>
-            <span>Qualidade desde o refinamento</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section soft" id="experiencia">
-      <div class="container">
-        <div class="section-title narrow reveal">
-          <p class="kicker">Experiência</p>
-          <h2>Uma trajetória construída entre processos, liderança e evolução da qualidade.</h2>
-        </div>
-
-        <div class="timeline">
-          <article class="timeline-item reveal">
-            <span class="period">Hoje</span>
-            <div class="timeline-card">
-              <h3>QA Lead</h3>
-              <p>
-                Liderança técnica em qualidade, apoiando decisões de cobertura,
-                priorização por risco e melhoria dos rituais de teste.
-              </p>
-              <div class="chips">
-                <span>Estratégia</span>
-                <span>Risco</span>
-                <span>Liderança</span>
+          <aside class="hero-panel reveal" aria-label="Resumo da formação">
+            <div class="terminal-card">
+              <div class="terminal-top">
+                <span></span>
+                <span></span>
+                <span></span>
+                <strong>quality-runner</strong>
+              </div>
+              <div class="terminal-lines">
+                <p><span>$</span> mapear_riscos --fluxos-criticos</p>
+                <p><span>✓</span> cobertura planejada por impacto</p>
+                <p><span>$</span> rodar_automacao --feedback-rapido</p>
+                <p><span>✓</span> regressão protegida</p>
               </div>
             </div>
-          </article>
-
-          <article class="timeline-item reveal">
-            <span class="period">+5 anos</span>
-            <div class="timeline-card">
-              <h3>QA Engineer</h3>
-              <p>
-                Execução e evolução de testes web, mobile, API e regressão,
-                conectando requisitos, evidências e comunicação clara de bugs.
-              </p>
-              <div class="chips">
-                <span>Web</span>
-                <span>Mobile</span>
-                <span>API</span>
-                <span>Regressão</span>
-              </div>
+            <div class="panel-stats">
+              <article>
+                <strong>7</strong>
+                <span>trilhas</span>
+              </article>
+              <article>
+                <strong>30+</strong>
+                <span>desafios</span>
+              </article>
+              <article>
+                <strong>100%</strong>
+                <span>prático</span>
+              </article>
             </div>
-          </article>
+          </aside>
+        </div>
+      </section>
 
-          <article class="timeline-item reveal">
-            <span class="period">Automação</span>
-            <div class="timeline-card">
-              <h3>Testes automatizados</h3>
-              <p>
-                Criação de suítes automatizadas para acelerar feedback,
-                proteger jornadas críticas e reduzir esforço repetitivo.
-              </p>
+      <section class="section">
+        <div class="container guidance">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Guia rápido</p>
+            <h2>Como começar sem se perder no caminho.</h2>
+          </div>
+          <div class="guidance-grid">
+            <article class="guide-card reveal">
+              <span>01</span>
+              <h3>Fundamentos primeiro</h3>
+              <p>Entenda tipos de teste, ciclo de vida, critérios de aceite e como pensar em risco.</p>
+            </article>
+            <article class="guide-card reveal">
+              <span>02</span>
+              <h3>Prática guiada</h3>
+              <p>Transforme requisitos em cenários, evidências, bugs claros e checklists úteis.</p>
+            </article>
+            <article class="guide-card reveal">
+              <span>03</span>
+              <h3>Automação com propósito</h3>
+              <p>Automatize fluxos que dão retorno real ao time, não scripts só para enfeitar currículo.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section soft" id="trilhas">
+        <div class="container">
+          <div class="section-heading narrow reveal">
+            <p class="eyebrow">Trilhas</p>
+            <h2>Do primeiro caso de teste à automação de cenários críticos.</h2>
+          </div>
+
+          <div class="track-grid">
+            <article class="track-card featured reveal">
+              <div class="track-icon">01</div>
+              <h3>QA Foundation</h3>
+              <p>Base para começar bem: bugs, cenários, evidências, requisitos, critérios e comunicação.</p>
+              <div class="chips">
+                <span>Manual testing</span>
+                <span>BDD</span>
+                <span>Bug report</span>
+              </div>
+            </article>
+            <article class="track-card reveal">
+              <div class="track-icon">02</div>
+              <h3>API Testing</h3>
+              <p>Contratos, status code, payload, autenticação, cenários negativos e validação de integrações.</p>
+              <div class="chips">
+                <span>Postman</span>
+                <span>REST</span>
+                <span>JSON</span>
+              </div>
+            </article>
+            <article class="track-card reveal">
+              <div class="track-icon">03</div>
+              <h3>Web Automation</h3>
+              <p>Automação E2E com Playwright e Cypress para proteger jornadas que realmente importam.</p>
               <div class="chips">
                 <span>Playwright</span>
                 <span>Cypress</span>
-                <span>Selenium</span>
-                <span>Appium</span>
+                <span>CI</span>
               </div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="cases">
-      <div class="container">
-        <div class="section-title narrow reveal">
-          <p class="kicker">Cases</p>
-          <h2>Atuações que resumem minha forma de trabalhar com qualidade.</h2>
-        </div>
-
-        <div class="case-grid">
-          <article class="case-card reveal">
-            <span>01</span>
-            <h3>Análise de risco</h3>
-            <p>Priorização por impacto no usuário, criticidade do fluxo e dependências.</p>
-          </article>
-          <article class="case-card reveal">
-            <span>02</span>
-            <h3>Automação E2E</h3>
-            <p>Validação de jornadas críticas com feedback rápido para o time.</p>
-          </article>
-          <article class="case-card reveal">
-            <span>03</span>
-            <h3>Qualidade em APIs</h3>
-            <p>Contratos, integrações, payloads e cenários negativos bem definidos.</p>
-          </article>
-          <article class="case-card reveal">
-            <span>04</span>
-            <h3>IA aplicada a QA</h3>
-            <p>Geração de ideias, edge cases e apoio à investigação de falhas.</p>
-          </article>
-          <article class="case-card reveal">
-            <span>05</span>
-            <h3>Processos claros</h3>
-            <p>Documentação objetiva, evidências úteis e comunicação sem ruído.</p>
-          </article>
-          <article class="case-card reveal">
-            <span>06</span>
-            <h3>Cultura de qualidade</h3>
-            <p>Qualidade como responsabilidade do time inteiro, não uma etapa final.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section soft">
-      <div class="container two-columns">
-        <div class="section-title reveal">
-          <p class="kicker">Competências</p>
-          <h2>Estratégia, processos e tecnologia aplicados à qualidade.</h2>
-        </div>
-        <div class="skills reveal">
-          <div>
-            <h3>Ferramentas</h3>
-            <p>Playwright, Cypress, Selenium, Appium, JavaScript, Postman, Git.</p>
-          </div>
-          <div>
-            <h3>Práticas</h3>
-            <p>Testes funcionais, regressão, API, mobile, análise de impacto e BDD.</p>
-          </div>
-          <div>
-            <h3>Atuação</h3>
-            <p>Liderança, refinamento, documentação, comunicação e melhoria contínua.</p>
+            </article>
+            <article class="track-card reveal">
+              <div class="track-icon">04</div>
+              <h3>Mobile QA</h3>
+              <p>Testes mobile, device thinking, usabilidade, regressão e automação com Appium.</p>
+              <div class="chips">
+                <span>Appium</span>
+                <span>Android</span>
+                <span>iOS</span>
+              </div>
+            </article>
+            <article class="track-card reveal">
+              <div class="track-icon">05</div>
+              <h3>Performance</h3>
+              <p>Conceitos de carga, thresholds, gargalos e análise de comportamento com k6.</p>
+              <div class="chips">
+                <span>k6</span>
+                <span>Load</span>
+                <span>Metrics</span>
+              </div>
+            </article>
+            <article class="track-card reveal">
+              <div class="track-icon">06</div>
+              <h3>QA Leadership</h3>
+              <p>Estratégia de testes, risco, qualidade em times ágeis, mentoria e evolução de processos.</p>
+              <div class="chips">
+                <span>Risk</span>
+                <span>Strategy</span>
+                <span>Quality gates</span>
+              </div>
+            </article>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="section contact" id="contato">
-      <div class="container">
-        <div class="contact-card reveal">
+      <section class="section" id="roadmap">
+        <div class="container roadmap-layout">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Roadmap</p>
+            <h2>Uma rota simples para evoluir com consistência.</h2>
+          </div>
+
+          <div class="roadmap">
+            <article class="roadmap-item reveal">
+              <span>Semana 1</span>
+              <h3>Fundamentos e mentalidade</h3>
+              <p>Aprenda a pensar como QA: risco, fluxo, usuário, impacto e comunicação.</p>
+            </article>
+            <article class="roadmap-item reveal">
+              <span>Semana 2</span>
+              <h3>Cenários e evidências</h3>
+              <p>Escreva casos úteis, reporte bugs com clareza e gere evidências que ajudam o time.</p>
+            </article>
+            <article class="roadmap-item reveal">
+              <span>Semana 3</span>
+              <h3>APIs e automação</h3>
+              <p>Saia do manual repetitivo e comece a proteger fluxos com testes automatizados.</p>
+            </article>
+            <article class="roadmap-item reveal">
+              <span>Semana 4</span>
+              <h3>Portfólio e carreira</h3>
+              <p>Organize projetos, conte sua evolução e prepare uma narrativa profissional forte.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section soft" id="labs">
+        <div class="container">
+          <div class="section-heading narrow reveal">
+            <p class="eyebrow">Labs práticos</p>
+            <h2>Desafios que simulam problemas reais de times de produto.</h2>
+          </div>
+
+          <div class="lab-grid">
+            <article class="lab-card reveal">
+              <div class="lab-meta">Lab 01 · Funcional</div>
+              <h3>Checkout quebrado</h3>
+              <p>Mapeie falhas em uma jornada de compra, priorize bugs e proponha cobertura mínima.</p>
+            </article>
+            <article class="lab-card reveal">
+              <div class="lab-meta">Lab 02 · API</div>
+              <h3>Contrato instável</h3>
+              <p>Valide payloads, status code, mensagens de erro e cenários de autenticação.</p>
+            </article>
+            <article class="lab-card reveal">
+              <div class="lab-meta">Lab 03 · Automação</div>
+              <h3>Regressão crítica</h3>
+              <p>Crie uma suíte E2E enxuta para proteger login, busca, carrinho e finalização.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container proof">
+          <div class="proof-card reveal">
+            <p class="eyebrow">Certificação simbólica</p>
+            <h2>Construa repertório, não só certificados.</h2>
+            <p>
+              Cada trilha pode virar um projeto de portfólio: README bem escrito, cenários de teste,
+              evidências, automação e aprendizados. É assim que QA deixa de ser teoria e vira prática demonstrável.
+            </p>
+          </div>
+          <div class="certificate reveal" aria-label="Prévia de certificado">
+            <span>Jhonatan QA Lab</span>
+            <strong>Quality Journey</strong>
+            <small>Fundamentos · API · Automação · Carreira</small>
+          </div>
+        </div>
+      </section>
+
+      <section class="section soft" id="faq">
+        <div class="container faq-layout">
+          <div class="section-heading reveal">
+            <p class="eyebrow">FAQ</p>
+            <h2>Perguntas rápidas antes de começar.</h2>
+          </div>
+
+          <div class="faq-list">
+            <details class="reveal" open>
+              <summary>Preciso saber programar para começar?</summary>
+              <p>Não. O ideal é começar por fundamentos de teste e depois evoluir para automação com JavaScript.</p>
+            </details>
+            <details class="reveal">
+              <summary>Automação substitui testes manuais?</summary>
+              <p>Não. Automação acelera feedback, mas pensamento crítico, risco e exploração continuam essenciais.</p>
+            </details>
+            <details class="reveal">
+              <summary>Essa página é uma cópia direta da referência?</summary>
+              <p>Ela foi inspirada na estrutura e proposta original, mas ganhou nome, visual e conteúdo próprios.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="section final-cta">
+        <div class="container cta-card reveal">
           <div>
-            <p class="kicker">Contato</p>
-            <h2>Vamos conversar sobre qualidade, automação e processos?</h2>
-            <p>Se fizer sentido trocarmos ideias, me chame pelo LinkedIn.</p>
+            <p class="eyebrow">Vamos falar de QA?</p>
+            <h2>Quer trocar ideia sobre carreira, testes ou automação?</h2>
+            <p>Me chame no LinkedIn e vamos conversar sobre qualidade de software com pé no chão.</p>
           </div>
           <a class="button light" href="https://www.linkedin.com/in/jhonatanpereiraqa/" target="_blank" rel="noreferrer">
             Conversar no LinkedIn
           </a>
         </div>
-      </div>
-    </section>
-  </main>
+      </section>
+    </main>
 
-  <footer>
-    <p>Jhonatan da Silva Pereira · QA Lead</p>
-    <a href="#inicio">Voltar ao topo</a>
-  </footer>
+    <footer class="footer">
+      <p>© 2026 Jhonatan QA Lab. Inspirado por comunidades que ensinam QA na prática.</p>
+      <a href="#home">Voltar ao topo</a>
+    </footer>
 
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

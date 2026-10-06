@@ -1,21 +1,14 @@
-# Portfólio - Jhonatan Pereira
+# Jhonatan QA Lab
 
-Página estática para GitHub Pages, inspirada no estilo visual da referência enviada e adaptada para um perfil de QA Lead.
+Landing page publicada em GitHub Pages, inspirada na estrutura da Null and Void QA, com nome, conteúdo e UI próprios.
 
 ## Publicação
 
-1. Crie um repositório chamado `xDjhoowxD.github.io`.
-2. Envie `index.html`, `styles.css` e `script.js` para a branch principal.
-3. Ative em `Settings > Pages`.
-4. Acesse `https://xdjhoowxd.github.io`.
+Site: `https://xdjhoowxd.github.io/`
 
-O contato da página aponta apenas para o LinkedIn:
-`https://www.linkedin.com/in/jhonatanpereiraqa/`
+## Conteúdo
 
-## Foto
-
-Para usar sua foto no topo da página, salve a imagem como:
-
-`assets/profile.jpg`
-
-Enquanto esse arquivo não existir, a página exibe um fallback com as iniciais `JP`.
+- Trilhas de QA Foundation, API Testing, Web Automation, Mobile QA, Performance e QA Leadership.
+- Roadmap de evolução.
+- Labs práticos.
+- CTA para conversa no LinkedIn.
