@@ -469,7 +469,6 @@ h3 {
 }
 
 .guide-card span,
-.track-icon,
 .roadmap-item span,
 .lab-meta {
   display: inline-flex;
@@ -489,9 +488,9 @@ h3 {
   line-height: 1.7;
 }
 
-.track-grid {
+.track-list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
 }
 
@@ -499,6 +498,87 @@ h3 {
   background:
     radial-gradient(circle at 95% 5%, rgba(45, 212, 191, 0.26), transparent 11rem),
     var(--surface);
+}
+
+.track-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.track-level {
+  padding: 0.42rem 0.7rem;
+  color: var(--brand-2);
+  background: rgba(14, 165, 233, 0.1);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  font-size: 0.76rem;
+  font-weight: 900;
+}
+
+.track-icon {
+  display: inline-grid;
+  width: 2.8rem;
+  height: 2.8rem;
+  place-items: center;
+  color: white;
+  background: linear-gradient(135deg, var(--brand-2), var(--brand-3));
+  border-radius: 1rem;
+  box-shadow: 0 16px 30px rgba(37, 99, 235, 0.18);
+}
+
+.track-icon.amber {
+  background: linear-gradient(135deg, #f59e0b, #f97316);
+}
+
+.track-icon.green,
+.track-icon.emerald {
+  background: linear-gradient(135deg, #10b981, #14b8a6);
+}
+
+.track-icon.violet {
+  background: linear-gradient(135deg, #8b5cf6, #6366f1);
+}
+
+.course-list {
+  display: grid;
+  gap: 0.7rem;
+  margin-top: 1.2rem;
+}
+
+.course-list details {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: rgba(14, 165, 233, 0.06);
+  border-radius: 1rem;
+}
+
+.course-list summary {
+  cursor: pointer;
+  padding: 0.9rem 1rem;
+  color: var(--ink);
+  font-weight: 900;
+}
+
+.course-list ul {
+  display: grid;
+  gap: 0.58rem;
+  margin: 0;
+  padding: 0 1rem 1rem 1.35rem;
+  color: var(--muted);
+}
+
+.course-list li {
+  line-height: 1.45;
+}
+
+.course-list small {
+  color: var(--brand-2);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.72rem;
+  font-weight: 900;
 }
 
 .chips {
@@ -654,28 +734,24 @@ h3 {
   transform: translateY(0) scale(1);
 }
 
-.track-grid .reveal:nth-child(2),
+.track-list .reveal:nth-child(2),
 .guidance-grid .reveal:nth-child(2),
 .lab-grid .reveal:nth-child(2) {
   transition-delay: 90ms;
 }
 
-.track-grid .reveal:nth-child(3),
+.track-list .reveal:nth-child(3),
 .guidance-grid .reveal:nth-child(3),
 .lab-grid .reveal:nth-child(3) {
   transition-delay: 180ms;
 }
 
-.track-grid .reveal:nth-child(4) {
+.track-list .reveal:nth-child(4) {
   transition-delay: 270ms;
 }
 
-.track-grid .reveal:nth-child(5) {
+.track-list .reveal:nth-child(5) {
   transition-delay: 360ms;
-}
-
-.track-grid .reveal:nth-child(6) {
-  transition-delay: 450ms;
 }
 
 @keyframes drift {
@@ -720,7 +796,7 @@ h3 {
     grid-template-columns: 1fr;
   }
 
-  .track-grid,
+  .track-list,
   .lab-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -735,7 +811,7 @@ h3 {
     display: none;
   }
 
-  .track-grid,
+  .track-list,
   .lab-grid,
   .panel-stats {
     grid-template-columns: 1fr;

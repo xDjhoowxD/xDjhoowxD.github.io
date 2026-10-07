@@ -8,7 +8,7 @@ Site: `https://xdjhoowxd.github.io/`
 
 ## Conteúdo
 
-- Trilhas de QA Foundation, API Testing, Web Automation, Mobile QA, Performance e QA Leadership.
+- Trilhas de Testes Básicos, Testes Avançados, Testes Mobile, Maestria em QA e Arena de Carga.
 - Roadmap de evolução.
 - Labs práticos.
 - CTA para conversa no LinkedIn.
